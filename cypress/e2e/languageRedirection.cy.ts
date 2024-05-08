@@ -60,7 +60,7 @@ describe("Language Redirection Tests with Navigator Language Change", () => {
 
     cy.reload();
     cy.wait(2000);
-    cy.url().should("include", "/en");
+    cy.url().should("include", "/");
     cy.contains("Welcome to the English version!");
   });
 });

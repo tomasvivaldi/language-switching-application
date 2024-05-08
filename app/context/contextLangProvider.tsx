@@ -31,7 +31,7 @@ export const LangProvider = ({ children }: { children: ReactNode }) => {
   const setLang = (lang: string) => {
     setLanguage(lang);
     localStorage.setItem("preferredLanguage", lang);
-    router.push(lang === "en" ? "/en" : `/${lang}`);
+    router.push(lang === "en" ? "/" : `/${lang}`);
   };
 
   useEffect(() => {

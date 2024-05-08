@@ -8,7 +8,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <html lang={lang}>
-      <body className="p-8">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

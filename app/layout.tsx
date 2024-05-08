@@ -1,6 +1,7 @@
 import "./globals.css";
 import { MainLayout } from "./mainLayout";
 import { LangProvider } from "./context/contextLangProvider";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 export default function RootLayout({
   children,
@@ -9,7 +10,9 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <LangProvider>{children}</LangProvider>
+      <LangProvider>
+        <MainLayout>{children}</MainLayout>
+      </LangProvider>
     </>
   );
 }

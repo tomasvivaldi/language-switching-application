@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import LanguageSwitcher from "../components/LanguageSwitcher";
+
 import { MainLayout } from "../mainLayout";
 
 export const metadata: Metadata = {
@@ -13,10 +13,5 @@ export default function FrenchLayout({
   children: React.ReactNode;
 }>) {
   // const { lang } = useLang();
-  return (
-    <MainLayout>
-      <LanguageSwitcher />
-      {children}
-    </MainLayout>
-  );
+  return <MainLayout>{children}</MainLayout>;
 }

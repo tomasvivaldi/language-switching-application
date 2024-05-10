@@ -13,5 +13,5 @@ export default function FrenchLayout({
   children: React.ReactNode;
 }>) {
   // const { lang } = useLang();
-  return <MainLayout>{children}</MainLayout>;
+  return children;
 }

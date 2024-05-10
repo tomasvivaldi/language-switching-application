@@ -11,5 +11,5 @@ export default function JapaneseLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <MainLayout>{children}</MainLayout>;
+  return children;
 }

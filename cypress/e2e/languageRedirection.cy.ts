@@ -2,7 +2,7 @@
 
 describe("Language Redirection Tests with Navigator Language Change", () => {
   it("Redirects to French page", () => {
-    cy.visit("/en");
+    cy.visit("/");
 
     cy.window().then((window) => {
       Object.defineProperty(window.navigator, "language", {
@@ -23,7 +23,7 @@ describe("Language Redirection Tests with Navigator Language Change", () => {
   });
 
   it("Redirects to Japanese page", () => {
-    cy.visit("/en");
+    cy.visit("/");
 
     cy.window().then((window) => {
       Object.defineProperty(window.navigator, "language", {
